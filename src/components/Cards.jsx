@@ -17,10 +17,10 @@ const dummyData = [
 export default function Cards() {
   console.log(dummyData[0]);
   return (
-    <div>
-      <Card data={dummyData[0]} />
-      <Card data={dummyData[1]} />
-      <Card data={dummyData[2]} />
+    <div className="cards">
+      {dummyData.map((e) => (
+        <Card data={e} />
+      ))}
     </div>
   );
 }

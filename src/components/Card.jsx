@@ -1,7 +1,8 @@
+import "../styles/card.css";
 const Card = ({ data }) => {
-  console.log("inside", data);
+  // console.log("inside", data);
   return (
-    <div>
+    <div className="card">
       <p>{data.title}</p>
       <img src={data.img} alt="" />
     </div>
