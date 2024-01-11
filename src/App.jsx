@@ -1,14 +1,11 @@
-import Cards from "./components/Cards";
 import Header from "./components/Header";
-import Highlight from "./components/Highlight";
-import "./styles/global.css";
+import Icon from "./components/Icon";
 
 export default function App() {
   return (
     <div>
+      <Icon />
       <Header />
-      <Highlight />
-      <Cards />
     </div>
   );
 }
