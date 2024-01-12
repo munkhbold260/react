@@ -1,12 +1,19 @@
-import { useState } from "react";
-import User from "./User";
-export default function () {
-  const [score, setscore] = useState("");
+export default function Reset({
+  qwer1,
+  func1,
+  qwer2,
+  func2,
+  qwer3,
+  func3,
+  first,
+}) {
   return (
     <div className="resetBtn">
       <button
         onClick={() => {
-          setscore(score == 0);
+          func1((qwer1 = first));
+          func2((qwer2 = first));
+          func3((qwer3 = first));
         }}
       >
         Reset

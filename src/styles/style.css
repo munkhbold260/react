@@ -41,6 +41,12 @@
   border-radius: 50%;
   border: solid 0.2px#838383;
   background-color: white;
+  font-weight: 700;
+  font-size: 20px;
+}
+.score p {
+  font-weight: 700;
+  font-size: 20px;
 }
 .resetBtn {
   display: flex;
@@ -53,4 +59,8 @@
   background-color: #14b166;
   border-radius: 8px;
   border: none;
+}
+/* sdknslknflkwfnwekf */
+.test {
+  background-color: aquamarine;
 }

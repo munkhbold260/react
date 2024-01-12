@@ -1,20 +1,17 @@
-import { useState } from "react";
-
-export default function () {
-  const [score, setScore] = useState(10);
+export default function Buttons({ qwer, func }) {
   return (
     <div className="score">
       <button
         onClick={() => {
-          setScore(score - 1);
+          func(qwer - 1);
         }}
       >
         -
       </button>
-      <p>{score}</p>
+      <p>{qwer}</p>
       <button
         onClick={() => {
-          setScore(score + 1);
+          func(qwer + 1);
         }}
       >
         +
