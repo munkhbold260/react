@@ -5,19 +5,18 @@ export default function Reset({
   func2,
   qwer3,
   func3,
-  first,
+  firstScore,
 }) {
   return (
-    <div className="resetBtn">
-      <button
-        onClick={() => {
-          func1((qwer1 = first));
-          func2((qwer2 = first));
-          func3((qwer3 = first));
-        }}
-      >
-        Reset
-      </button>
-    </div>
+    <button
+      className="resetBtn"
+      onClick={() => {
+        func1((qwer1 = firstScore));
+        func2((qwer2 = firstScore));
+        func3((qwer3 = firstScore));
+      }}
+    >
+      Reset
+    </button>
   );
 }

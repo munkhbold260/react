@@ -5,7 +5,7 @@
 }
 .main {
   width: 530px;
-  height: 530px;
+  height: fit-content;
   border: solid 1px gray;
   padding: 32px;
   display: flex;
@@ -48,19 +48,16 @@
   font-weight: 700;
   font-size: 20px;
 }
-.resetBtn {
+.addOrReset {
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
   align-items: center;
 }
-.resetBtn button {
+.addOrReset button {
+  background-color: #14b166;
   width: 120px;
   height: 56px;
   background-color: #14b166;
   border-radius: 8px;
   border: none;
-}
-/* sdknslknflkwfnwekf */
-.test {
-  background-color: aquamarine;
 }
