@@ -1,22 +1,17 @@
-export default function Reset({
-  qwer1,
-  func1,
-  qwer2,
-  func2,
-  qwer3,
-  func3,
-  firstScore,
-}) {
+import { playerList } from "../utils/playerList";
+export default function Reset({}) {
   return (
     <button
       className="resetBtn"
       onClick={() => {
-        func1((qwer1 = firstScore));
-        func2((qwer2 = firstScore));
-        func3((qwer3 = firstScore));
+        console.log("resetlegehgu bnshdee ene gulug chin");
       }}
     >
       Reset
     </button>
   );
 }
+
+// func1((qwer1 = firstScore));
+// func2((qwer2 = firstScore));
+// func3((qwer3 = firstScore));

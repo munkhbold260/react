@@ -1,25 +1,26 @@
-import { useState } from "react";
-// const playersList = [
-//   { names: "player1" },
-//   { names: "player2" },
-//   { names: "player3" },
-//   { names: "player4" },
-// ];
+import { playerList } from "../utils/playerList";
 
-function AddPlayer() {
-  var list = [];
-  const [gold, setGold] = useState(list);
+function AddPlayer({ func1 }) {
   return (
-    <button
-      className="addPlayerBtn"
-      onClick={() => {
-        setGold(list.push({ names: "jhsdjh" }));
-        console.log("sdjnjh");
-        console.log(list);
-      }}
-    >
-      {list}
-    </button>
+    <div>
+      <button
+        onClick={() => {
+          func1(
+            playerList.push({
+              playerName: nameInput.value,
+              score: 10,
+              index: playerList.length,
+            })
+          );
+
+          nameInput.value = "";
+          console.log(playerList);
+        }}
+      >
+        Add PLayer
+      </button>
+      <input id="nameInput" type="" placeholder="insert new player Name" />
+    </div>
   );
 }
 export default AddPlayer;
