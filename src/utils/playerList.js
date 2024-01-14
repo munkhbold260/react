@@ -1,1 +1,1 @@
-export const playerList = [];
+export var playerList = [];

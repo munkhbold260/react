@@ -1,5 +1,5 @@
 import { playerList } from "../utils/playerList";
-export default function RenderingList({ func }) {
+export default function RenderingList({ func, qwer }) {
   const listItems = playerList.map((element) => {
     return (
       <div className="user">
@@ -7,15 +7,15 @@ export default function RenderingList({ func }) {
         <div className="score">
           <button
             onClick={() => {
-              func((element.score = element.score - 1));
+              func(qwer - 1);
             }}
           >
             -
           </button>
-          <p> {element.score} </p>
+          <p> {element.scores} </p>
           <button
             onClick={() => {
-              func((element.score = element.score + 1));
+              func((element.scores = element.scores + 1));
             }}
           >
             +

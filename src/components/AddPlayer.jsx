@@ -8,7 +8,7 @@ function AddPlayer({ func1 }) {
           func1(
             playerList.push({
               playerName: nameInput.value,
-              score: 10,
+              scores: 10,
               index: playerList.length,
             })
           );

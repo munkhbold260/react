@@ -10,8 +10,7 @@ import { playerList } from "./utils/playerList";
 
 //////////////////////////////////////////
 export default function App() {
-  const firstScore = 0;
-  const [score, setScore] = useState(playerList.score);
+  const [score, setScore] = useState(playerList.scores);
   const [addplayer, setAddPlayer] = useState(playerList);
 
   return (
@@ -21,14 +20,10 @@ export default function App() {
         <Icon />
       </div>
 
-      <RenderingList qwer={playerList.score} func={setScore} />
+      <RenderingList qwer={score} func={setScore} />
       <div className="addOrReset">
-        <AddPlayer qwer1={playerList.score} func1={setAddPlayer} />
-        <Reset
-          firstScore={firstScore}
-          qwer1={playerList.score}
-          func1={setScore}
-        />
+        <AddPlayer qwer1={playerList.scores} func1={setAddPlayer} />
+        <Reset qwer={playerList.scores} func={setScore} />
       </div>
     </div>
   );

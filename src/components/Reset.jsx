@@ -1,5 +1,5 @@
 import { playerList } from "../utils/playerList";
-export default function Reset({}) {
+export default function Reset({ func, qwer }) {
   return (
     <button
       className="resetBtn"
