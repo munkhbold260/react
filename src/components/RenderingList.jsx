@@ -1,5 +1,8 @@
 import { playerList } from "../utils/playerList";
 export default function RenderingList({ func, qwer }) {
+  playerList.sort((b, a) => {
+    return a.scores - b.scores;
+  });
   const listItems = playerList.map((element) => {
     return (
       <div className="user">
@@ -7,7 +10,7 @@ export default function RenderingList({ func, qwer }) {
         <div className="score">
           <button
             onClick={() => {
-              func(qwer - 1);
+              func((element.scores = element.scores - 1));
             }}
           >
             -

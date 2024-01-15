@@ -6,13 +6,14 @@ import Reset from "./components/Reset";
 import AddPlayer from "./components/AddPlayer";
 import RenderingList from "./components/RenderingList";
 import { playerList } from "./utils/playerList";
+
 ///////////////////////////////////////////////
 
 //////////////////////////////////////////
 export default function App() {
   const [score, setScore] = useState(playerList.scores);
   const [addplayer, setAddPlayer] = useState(playerList);
-
+  const [sort, setSort] = useState(playerList.score);
   return (
     <div className="main">
       <div className="header">
@@ -23,7 +24,12 @@ export default function App() {
       <RenderingList qwer={score} func={setScore} />
       <div className="addOrReset">
         <AddPlayer qwer1={playerList.scores} func1={setAddPlayer} />
-        <Reset qwer={playerList.scores} func={setScore} />
+        <Reset
+          qwer={playerList.scores}
+          func={setScore}
+          qwer2={playerList.scores}
+          func2={setSort}
+        />
       </div>
     </div>
   );
